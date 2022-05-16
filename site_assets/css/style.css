@@ -2615,17 +2615,30 @@ footer.ftshap:before {
 	z-index: 55
 }
 
+.fixedTimer{
+	position: fixed;
+	top: 110px;
+	right: 15px;
+
+}
+
+.details b{
+	color: #000000;
+}
+
+.detsabutExm {
+	line-height: 20px;
+}
+
 .exam-ques-card h3{
-	width: 100%;
 	text-align: center;
-	border-bottom: 1px solid #e2e2e2;
-	padding-bottom: 20px;
 }
 
 #timer ,#timerelap{
-	font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
     color: black;
+    padding: 6px;
 }
 
 .tmrbx:nth-child(2){
@@ -2645,6 +2658,8 @@ footer.ftshap:before {
 .tmrbx{
 	background: #ff9554;
     padding: 3px;
+    width: calc(100% - 20%);
+    margin: auto;
     border-radius: 4px;
     text-align: center;
 }
@@ -2694,7 +2709,7 @@ footer.ftshap:before {
 
 .exam-ques-card {
 	padding: 25px;
-	border-top:8px solid #87be3e;
+	border-top:8px solid #2b9feb;
 	border-radius: 6px;
 	margin-top: -250px;
 	background: #fff;
