@@ -321,7 +321,7 @@
       <div class="col-lg-5">
         <div class="d-flex justify-content-between align-items-center mb-5">
             <h4>Lorem ippsum</h4>
-            <a href="./quesions.html" class="btn-main bg-btn2 lnk">
+            <a href="#" class="btn-main bg-btn2 lnk" data-toggle="modal" data-test-id="2" data-wow-delay=".2s" data-exam-title="SCO" data-target="#FreeMockTest">
                 Start Test
                 <i class="fas fa-chevron-right fa-icon fa-ani"></i>
                 <span class="circle"></span>
@@ -438,6 +438,41 @@
 		</div>
 	</div>
 </footer>
+
+<div class="">
+  <div class="modal" id="FreeMockTest" aria-modal="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="common-heading mb-0">
+              <h4 class="mt0 mb0"><span id="test_title">Exam</span> Login</h4>
+          </div>
+        <button type="button" class="closes" data-dismiss="modal">×</button></div>
+        <!-- Modal body -->
+        <div class="modal-body pt40 pb60">
+          <div class="form-block fdgn2">
+            <form id="contact-form" method="post" action="#">
+              <div class="fieldsets row">
+                <div class="col-md-12 form-group">
+                    <input id="form_name" type="text" name="name" placeholder="Enter your User Name *" required="required"> 
+                </div>                
+              </div>
+              <div class="fieldsets row">
+                <div class="col-md-12 form-group"><input id="form_email" type="password" name="password" placeholder="Enter your password *" required="required"> 
+                </div>
+              </div>
+              <div class="fieldsets mt20">
+                  <input type="hidden" name="test_id" id="test_id" value="4">
+                  <button type="submit" value="submit" class="w-100 lnk btn-main bg-btn3">SUBMIT NOW<span class="circle"></span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="site_assets/js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="site_assets/js/jquery.min.js"></script>
 <script src="site_assets/js/bootstrap.bundle.min.js"></script> 
@@ -450,15 +485,7 @@
 <script src="site_assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
 <script src="site_assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
 <script src="site_assets/plugins/fancybox/jquery.fancybox.min.js"></script>
-
 <script src="site_assets/js/sweet-alert.min.js"></script>
-
-
-
-<script type="text/javascript">
-   
-	/* Displaying success/error message*/
-</script>
 <script src="site_assets/js/main.js"></script>
 <script type="text/javascript">
 	$('.books-carousel').owlCarousel({

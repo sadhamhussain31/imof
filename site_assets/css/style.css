@@ -2281,13 +2281,14 @@ footer .row {
 #scrollUp {
 	bottom: 20px;
 	right: 20px;
-	width: 30px;
+	width: 50px;
 	height: 50px;
 	-webkit-border-radius: 100px;
 	border-radius: 100px;
 	color: #fff;
 	opacity: .9;
-	background: url(../images/icons/up-arrow.svg) center center no-repeat #416ab1;
+	background: url(../images/icons/up-arrow.svg) center center no-repeat #f92c8b;
+	/*background-color: linear-gradient(to right, #f92c8b 0, #b02cd6 100%);*/
 	background-size: 15px
 }
 
@@ -2714,6 +2715,106 @@ footer.ftshap:before {
 	max-width: 300px;
 	height: 150px;
 	object-fit: contain;
+}
+
+.exampreparationSec .hwPrepr strong{
+	display: block;
+    background-color: #ef7f1a;
+    color: #000;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.exampreparationSec {
+	margin-top: 25px;
+}
+
+.purple {
+	color: #803480;
+}
+
+.exampreparationSec .hwPrepr.bluu strong{
+	background-color: #008dd2;
+}
+
+.exampreparationSec .hwPrepr.grnn strong{
+	background-color: #88be3e;
+}
+
+.exampreparationSec .hwPrepr{
+	border: 1px solid #cccccc6b;
+    border-radius: 4px;
+    padding: 10px;
+    line-height: 22px;
+	margin-bottom: 20px;
+}
+
+
+
+.examtestulLis li,
+.orLstofkidOLy li,
+.inovaivelists li{
+	padding-bottom: 5px;
+	font-size: 14px;
+}
+
+.awndRwds {
+    background: #80348014;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.awndRwds p::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../images/icons/mickeymouse.png");
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    background-repeat: no-repeat;
+    height: 25px;
+}
+
+.awndRwds p{
+	position: relative;
+	line-height: 25px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	color: #000;
+}
+
+.Disquali {
+    padding: 12px;
+    background: #ffdfdf;
+    font-style: italic;
+    color: #f00;
+}
+
+.inovaivelists li{
+	font-size: 16px;
+	padding-bottom: 8px;
+}
+
+.examtestulLis ,
+.orLstofkidOLy,
+.inovaivelists{
+	padding-left: 30px;
+	list-style-type: decimal;
+	line-height:25px;
+	
+}
+
+.oylumunLst li{
+	padding-bottom: 10px;
+}
+
+.oylumunLst {
+	padding-left: 80px;
+    list-style-type: decimal;
+    list-style-position: outside;
+    line-height: 25px;
 }
 
 .instru-Exam {
