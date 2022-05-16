@@ -2532,7 +2532,8 @@ footer.ftshap:before {
 .breadcrumb-area {
 	padding: 150px 0 90px;
     position: relative;
-    background-image: url('../images/vector/static-banner.svg');
+    /* background-image: url('../images/vector/static-banner.svg'); */
+	background-color: #97c857;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -2700,11 +2701,19 @@ footer.ftshap:before {
 }
 
 .instru-Exam li{
-	list-style-type: decimal;
+	list-style-type: disclosure-closed;
     padding-bottom: 15px;
     list-style-position: outside;
     text-indent: 0;
 	line-height: 25px;
+}
+
+.quesion-Images img{
+	width: auto;
+	min-width: 150px;
+	max-width: 300px;
+	height: 150px;
+	object-fit: contain;
 }
 
 .instru-Exam {
@@ -8708,12 +8717,52 @@ body.active-dark {
 }
 
 .wave-Bg {
-    background-image: url('../images/vector/wave-shape.svg');
+    /* background-image: url('../images/vector/wave-shape.svg'); */
     width: 100%;
     height: 100%;
     min-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.user-Auth-card:after {
+    content: '';
+    position: absolute;
+    top: 100px;
+    background-image: url('../images/vector/kid-vector.svg');
+    width: 100%;
+    height: 700px;
+    min-width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -250px;
+    left: auto;
+    background-position: right;
+    z-index: -1;
+}
+
+.user-Auth-card.login:after {
+	display: none;
+}
+.user-Auth-card.login:before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    background-image: url('../images/vector/boy-vector.svg');
+    width: 100%;
+    height: 450px;
+    min-width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: auto;
+    left: -140px;
+    background-position: left;
+    z-index: -1;
+}
+
+.user-Auth-card {
+    position: relative;
+	z-index: 1;
 }
 
 .uploadFile .upldhnt{
@@ -8764,6 +8813,12 @@ body.active-dark {
 	border-bottom: 5px solid #008dd2;
 	position: relative;
 	box-shadow: 5px 5px 6px rgb(0 0 0 / 6%);
+	background: rgba( 255, 255, 255, 0.25 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .element {
