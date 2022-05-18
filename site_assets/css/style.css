@@ -2530,11 +2530,19 @@ footer.ftshap:before {
 	color: #416ab1 !important
 }
 
+.final_Result img{
+	width: 100%;
+}
+
+.final_Result{
+	width: 100%;
+}
+
 .breadcrumb-area {
 	padding: 150px 0 90px;
     position: relative;
-    /* background-image: url('../images/vector/static-banner.svg'); */
-	background-color: #97c857;
+ 	background-image: url('../images/vector/static-bannner-wave.svg'); 
+	background-color: #eb7b2154;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -2717,7 +2725,7 @@ footer.ftshap:before {
 }
 
 .instru-Exam li{
-	list-style-type: disclosure-closed;
+	list-style-type: none;
     padding-bottom: 15px;
     list-style-position: outside;
     text-indent: 0;
@@ -2774,9 +2782,11 @@ footer.ftshap:before {
 }
 
 .awndRwds {
-    background: #80348014;
+    background: #008dd2;
     padding: 20px;
     border-radius: 6px;
+    border: 5px dashed #000;
+    border-style: dashed;
 }
 
 .awndRwds p::before{
@@ -2825,6 +2835,31 @@ footer.ftshap:before {
 	padding-bottom: 10px;
 }
 
+.whyimof  ul li{
+    color: #008dd2;
+}
+
+.whyimof::after {
+    position: absolute;
+    content: '';
+    right: 50px;
+    top: -110px;
+    background-image: url("../images/vector/quesionmark.svg");
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.whyimof {
+    background: #ffca4c;
+    padding: 22px;
+    border-radius: 20px;
+    border: 5px dashed #ec7b21;
+    position: relative;
+    margin-top: 150px;
+}
+
 .oylumunLst {
 	padding-left: 80px;
     list-style-type: decimal;
@@ -2833,7 +2868,7 @@ footer.ftshap:before {
 }
 
 .instru-Exam {
-	padding-left: 20px;
+	/*padding-left: 20px;*/
 	margin-top: 25px;
 }
 
@@ -4236,7 +4271,7 @@ footer.ftshap:before {
 	text-align: center
 }
 
-.srvc-bg-nx.srcl1::before {
+/*.srvc-bg-nx.srcl1::before {
 	background: rgb(111 134 249/ 50%);	
 }
 
@@ -4254,10 +4289,10 @@ footer.ftshap:before {
 
 .srvc-bg-nx.srcl4::before {
 	background: rgb(101 204 219/ 50%);	
-}
+}*/
 
 
-.srvc-bg-nx::before {
+/*.srvc-bg-nx::before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -4268,18 +4303,28 @@ footer.ftshap:before {
 	border-top-left-radius: 50px;
 	z-index: -1;
     border-bottom-right-radius: 50px;
-}
+}*/
 
 .srvc-bg-nx {
 	background: #fff;
 	overflow: visible;
-    border-top-left-radius: 100px;
-    border-bottom-right-radius: 100px;
+    /*border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;*/
+    border-image: url("https://www.w3schools.com/cssref/border.png");
     margin: 0 10px;
     height: 240px;
     position: relative;
-    -webkit-box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, .059), 0 8.2px 8.9px -30px rgba(0, 0, 0, .071), 0 25px 40px -30px rgba(0, 0, 0, .2);
-    box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, .059), 0 8.2px 8.9px -30px rgba(0, 0, 0, .071), 0 25px 40px -30px rgba(0, 0, 0, .2);
+    border: 10px solid transparent;
+  	padding: 15px;
+  	border-image-slice: 20%;
+  	border-width: 10px;
+  	border-radius: 12px;
+  	border-image: url("http://hermansvereecken.com/stuff/bingel/square-svg05d.svg")
+    38% round;
+  	margin: 0 auto;
+  	transition: all 0.4s;
+    /*-webkit-box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, .059), 0 8.2px 8.9px -30px rgba(0, 0, 0, .071), 0 25px 40px -30px rgba(0, 0, 0, .2);
+    box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, .059), 0 8.2px 8.9px -30px rgba(0, 0, 0, .071), 0 25px 40px -30px rgba(0, 0, 0, .2);*/
 }
 
 .about-sec-rpb {
@@ -4320,7 +4365,7 @@ footer.ftshap:before {
 
 .-service-list li a {
 	font-size: 13px;
-	color: #ffffff;
+	color: #000000;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding-bottom: 5px;
@@ -4338,8 +4383,8 @@ footer.ftshap:before {
 }
 
 .col-lg-3-cus {
-	width: 33%;
-	margin-bottom: 15px;
+	width: 31%;
+	margin: 10px;
 }
 
 .mt30- {
@@ -4438,7 +4483,8 @@ footer.ftshap:before {
 }
 
 .service-sec-list {
-	padding: 52px 25px
+	padding: 25px 25px;
+	position: relative;
 }
 
 .service-sec-brp {
@@ -4451,11 +4497,34 @@ footer.ftshap:before {
 	transition: width .5s, height .5s;
 	height: 60px;
 	width: 60px;
-	margin-bottom: 10px
+	margin-bottom: 10px;
+	filter: hue-rotate(84deg);
+}
+
+.service-sec-list:hover::after {
+    opacity: 1;
+    top: -79px;
+    z-index: -1;
+}
+
+.service-sec-list::after {
+	content: '';
+	position: absolute;
+	right: 15px;
+	top: -20px;
+	transition: all 0.4s ease-out;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-image: url("../images/vector/hide_cat.svg");
+	width: 100px;
+	height: 100px;
+	opacity: 0;
 }
 
 .service-sec-list:hover {
-	padding: 25px
+	padding: 25px;
+	background-color: #ccc;
 }
 
 .service-sec-list:hover img {
@@ -9311,9 +9380,80 @@ a.drop_query_btn_2 .drop_icon_mail {
 }
 
 
+.info-card{
+    cursor: url('https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562028/cursor_ad12rf.png'), auto;
+}
+
+.contact-card{
+  cursor: url('https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562029/cursor-worm_kij6gi.png'), auto;
+}
+
+@keyframes confetti-slow {
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  }
+
+  100% {
+    transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+  }
+}
+
+@keyframes confetti-medium {
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  }
+
+  100% {
+    transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+  }
+}
+
+@keyframes confetti-fast {
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  }
+
+  100% {
+    transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
+  }
+}
+
+
+.confetti-container {
+  perspective: 700px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.confetti.animation-slow{
+	animation: confetti-slow 2.25s linear 1 forwards;
+}
+
+.confetti.animation-medium{
+	animation: confetti-medium 1.75s linear 1 forwards;
+}
+
+.confetti.animation-fast{
+	animation: confetti-fast 1.25s linear 1 forwards;
+}
+
+.confetti {
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  border-radius: 0%;
+}
+
+
 @media only screen and (max-width: 769px) {
 	.profile-details .col-md-auto {
 		width: 120px;
 		height: 120px;
 	}
 }
+
+https://codepen.io/l2zeo/pen/ZEBLepW

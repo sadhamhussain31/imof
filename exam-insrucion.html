@@ -321,7 +321,7 @@
       <div class="col-lg-5">
         <div class="d-flex justify-content-between align-items-center mb-5">
             <h4>Lorem ippsum</h4>
-            <a href="#" class="btn-main bg-btn2 lnk" data-toggle="modal" data-test-id="2" data-wow-delay=".2s" data-exam-title="SCO" data-target="#FreeMockTest">
+            <a href="./exams-login.html" class="btn-main bg-btn2 lnk" data-test-id="2" data-wow-delay=".2s">
                 Start Test
                 <i class="fas fa-chevron-right fa-icon fa-ani"></i>
                 <span class="circle"></span>
@@ -332,21 +332,6 @@
         </div>
       </div>
     </div>
-
-   <!--  <div class="row">
-      <div class="col-lg-7 block-1 v-center order-lg-1 order-md-1">
-        <div class="common-heading inner-heading text-l pl25">
-          <h3>Creative Activities for Kids 1st to 10th</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
-        </div>
-      </div>
-      <div class="col-lg-5 order-lg-0 order-md-0">
-        <div class="image-block upset">
-          <img src="images/activitie-1.jpg" alt="" class="img-fluid img-thumbnail"/>
-        </div>
-      </div>
-    </div> -->
     
   </div>
 </section>
@@ -487,96 +472,5 @@
 <script src="site_assets/plugins/fancybox/jquery.fancybox.min.js"></script>
 <script src="site_assets/js/sweet-alert.min.js"></script>
 <script src="site_assets/js/main.js"></script>
-<script type="text/javascript">
-	$('.books-carousel').owlCarousel({
-	    items: 4,
-	    loop: true,
-	    autoplay: true,
-	    margin: 20,
-	    nav: true,
-	    navText: ["<i class='fal fa-angle-left'></i>", "<i class='fal fa-angle-right'></i>"],
-	    dots: true,
-	    autoplayTimeout: 3500,
-	    autoplayHoverPause: true,
-	    smartSpeed: 2000,
-	    responsive: {
-	      0: {
-	        items: 1
-	      },
-	      520: {
-	        items: 2
-	      },
-	      768: {
-	        items: 3
-	      },
-	      1200: {
-	        items: 3
-	      },
-	      1400: {
-	        items: 4
-	      },
-	      1600: {
-	        items: 4
-	      },
-	    }
-  });
-  $(function() {
-			$('.number').on('keydown', function(e){-1!==$.inArray(e.keyCode,[46,8,9,27,13,110,190])||/65|67|86|88/.test(e.keyCode)&&(!0===e.ctrlKey||!0===e.metaKey)||35<=e.keyCode&&40>=e.keyCode||(e.shiftKey||48>e.keyCode||57<e.keyCode)&&(96>e.keyCode||105<e.keyCode)&&e.preventDefault()});
-		})
-</script>
-<script>
-$(document).ready(function(){
-
-     var _URL = window.URL || window.webkitURL;
-
-     $('#file').change(function () {
-         var file  =  $(this)[0].files[0];
-
-         img = new Image();
-         var imgwidth = 0;
-         var imgheight = 0;
-         var maxwidth = 640;
-         var maxheight = 640;
-
-         img.src = _URL.createObjectURL(file);
-         img.onload = function() {
-             imgwidth = this.width;
-             imgheight = this.height;
-             
-             $("#width").text(imgwidth);
-             $("#height").text(imgheight);
-             if(imgwidth <= maxwidth && imgheight <= maxheight){
-                 
-                 var formData = new FormData();
-                 formData.append('fileToUpload', $('#file')[0].files[0]);
-                 $.ajax({
-                     url: 'https://cmofeduworld.org/upload_image',
-                     type: 'POST',
-                     data: formData,
-                     processData: false,
-                     contentType: false,
-                     dataType: 'json',
-                     success: function (response) {
-                         if(response.status == 1){
-                             // Setting Image for Preview
-                             $("#prev_img").attr("src","web_assets/uploads/"+response.returnText);
-                             $("#prev_img").show();
-                             
-                         }else{
-                             alert(response.returnText);
-                         } 
-                     }
-                 });
-             }else{
-                 alert("Image size should be under "+maxwidth+"X"+maxheight);
-             }
-         };
-         img.onerror = function() {             
-             alert("not a valid file: " + file.type);
-         }
-
-     });
- });
- </script>
 </body>
 </html>

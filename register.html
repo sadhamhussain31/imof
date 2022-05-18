@@ -156,33 +156,6 @@
 						</li>
 						<li><a href="./exam-insrucion.html" class="btn-br bg-btn3 btn-small btshad-b2 lnk">Exam <i
 									class="fas fa-chevron-right fa-ani"></i><span class="circle"></span></a> </li>
-						<!-- <li class="contact-show">
-						<a href='javascript:;' class="btn-br bg-btn5 btn-small btshad-b2 lnk trngl btn-br bg-btn">Register your Kid <i class="fal fa-user-graduate"></i></a>
-						<div class="contact-inquiry">
-							<div class="contact-info-">
-								<div class="inquiry-card-nn hrbg">
-									<div class="title-inq-c">FOR KID LOGIN</div>
-									<ul>
-										<li class="mb0"><a href="kids-login.html" ><i class="fal fa-lock-alt"></i>LOGIN</a></li>
-									</ul>
-								</div>
-								<div class="inquiry-card-nn">
-									<div class="title-inq-c">FOR KID REGISTER</div>
-									<ul>
-										<li><a href="register-your-kid.html"><i class="fal fa-building"></i>REGISTRATION</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</li> -->
-
-						<!-- <li>
-						<a href="register-your-school" class="d-none d-lg-block d-md-block btn-br bg-btn5 btn-small btshad-b2 lnk">
-							Register your School <i class="fal fa-building"></i><span class="circle"></span>
-						</a>
-					</li>
-					<li><a href="register-your-kid" class="d-none d-lg-block d-md-block btn-br bg-btn2 btn-small btshad-b2 lnk">Register your Kid <i class="fal fa-user-graduate"></i><span class="circle"></span></a> </li> -->
-						<!-- <li><a href="free-mock-test.html" class="btn-br bg-btn3 btn-small btshad-b2 lnk">Free Mock Test <i class="fas fa-chevron-right fa-ani"></i><span class="circle"></span></a> </li> -->
 					</ul>
 				</div>
 				<div class="mobile-menu2">
@@ -346,7 +319,7 @@
 								</div>
 								<div class="input-group mb-3">
 									<label class="custmLbl">Student Name</label>
-								<input type="text" class="form-control" placeholder="Student Name" name="school_name" required>
+									<input type="text" class="form-control" placeholder="Student Name" name="school_name" required>
 								</div>
 							</div>
 							<div class="col-lg-6">
@@ -381,6 +354,74 @@
 									<input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password" id="confirm_password">
 								</div>
 							</div>
+							<div class="col-lg-12">
+								<hr/>
+							</div>
+							<div class="col-lg-12">
+								<div class="input-group mb-3">
+									<label class="custmLbl">School Name</label>
+									<input type="text" class="form-control" placeholder="School Name" name="school_name" required>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-group mb-3">
+									<label class="custmLbl">Class</label>
+									<select class="custom-select form-control" id="class_1" name="class[]" required="">
+								  	<option value="">Select Class</option>
+										<option value="1">Class I</option>
+										<option value="2">Class II</option>
+										<option value="3">Class III</option>
+										<option value="4">Class IV</option>
+										<option value="5">Class V</option>
+										<option value="6">Class VI</option>
+										<option value="7">Class VII</option>
+										<option value="8">Class VIII</option>
+										<option value="9">Class IX</option>
+										<option value="10">Class X</option>
+										<option value="11">Class XI</option>
+										<option value="12">Class XII</option>
+										<option value="13">Nursery</option>
+										<option value="14">LKG</option>
+										<option value="15">UKG</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-group mb-3">
+									<label class="custmLbl">Olympiad</label>
+									<select class="custom-select form-control" name="category[]" id="category_1" required="">
+										<option value="">Select Olympiad</option>
+										<option value="2">SCO</option>
+										<option value="3">SSO</option>
+										<option value="4">SMO</option>
+										<option value="5">NGKO</option>
+										<option value="6">CIEO</option>
+										<option value="7">NHO</option>
+										<option value="8">CAO</option>
+										<option value="9">CPO</option>
+										<option value="10">CRO</option>
+										<option value="11">CKGO</option>
+										<option value="12">CIO</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-group mb-3">
+									<label class="custmLbl">Subject</label>
+									<select class="custom-select form-control" name="category[]" id="category_1" required="">
+										<option value="">Select Subject</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="input-group mb-3">
+									<label class="custmLbl">Price</label>
+									<input type="password" class="form-control" placeholder="Price" name="pay" id="pay">
+								</div>
+							</div>
+							
 							</div>
 							<div class="row">
 							
@@ -601,19 +642,18 @@
 				<ul class="footer-address-list link-hover row">
 					<div class="col-6">
 						<li><a href="javascript:;">SCO</a> </li>
-	                    <li><a href="javascript:;">SSO</a> </li>
-	                    <li><a href="javascript:;">SMO</a> </li>
-	                    <li><a href="javascript:;">NGKO</a> </li>
-	                    <li><a href="javascript:;">ICEO</a> </li>
-	                    <li><a href="javascript:;">NHO</a> </li>
+            <li><a href="javascript:;">SSO</a> </li>
+            <li><a href="javascript:;">SMO</a> </li>
+            <li><a href="javascript:;">NGKO</a> </li>
+            <li><a href="javascript:;">ICEO</a> </li>
+            <li><a href="javascript:;">NHO</a> </li>
 					</div>
-					<div class="col-6">
-						
-	                    <li><a href="javascript:;">NAO</a> </li>
-	                    <li><a href="javascript:;">CPO</a> </li>
-	                    <li><a href="javascript:;">CRO</a> </li>
-	                    <li><a href="javascript:;">CKGO</a> </li>
-	                    <li><a href="javascript:;">CIO</a> </li>
+					<div class="col-6">						
+              <li><a href="javascript:;">NAO</a> </li>
+              <li><a href="javascript:;">CPO</a> </li>
+              <li><a href="javascript:;">CRO</a> </li>
+              <li><a href="javascript:;">CKGO</a> </li>
+              <li><a href="javascript:;">CIO</a> </li>
 					</div>
 				</ul>
 			</div>
@@ -644,6 +684,7 @@
 						<p>Address <span> Creative Minds Olympiad Foundation - Warangal City Center , 2nd Floor - block A -Sh-02 - Opp LB College, Mulugu X Road, Warangal, Telangana 506007</span></p> -->
 						<iframe src="https://maps.google.com/maps?ll=28.6282999,77.2251734&amp;q=Atma%20Ram%20House&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</li>
+					
 				</ul>
 			</div>
 		</div>
@@ -768,77 +809,6 @@
         }
        
     }
-</script>
-<script>
-	function check_id(i,j)
-	{
-		
-		$.ajax({
-						type:"POST",
-						url : 'https://cmofeduworld.org/'+'school_dashboard/user_check',
-						data : {sponsorcode:i,check_id:j},
-						success : function(response) {
-							
-							if(response!='' && j==1)
-							{
-								if(j==1)
-								{
-								$('#email_check').html(response);
-								}
-							}
-							else if(j==1)
-							{
-								$('#email_check').html(response);	
-							}
-							if(response!='' && j==2)
-							{
-								if(j==2)
-								{
-								$('#mobile_check').html(response);
-								}
-							}
-							else if(j==2)
-							{
-								$('#mobile_check').html(response);	
-							}
-							
-							$.LoadingOverlay("hide");
-						},
-						error: function() {
-							alert('Error occured');
-							$.LoadingOverlay("hide");
-						}
-					});
-
-	}
-	$(function() {
-			$('.number').on('keydown', function(e){-1!==$.inArray(e.keyCode,[46,8,9,27,13,110,190])||/65|67|86|88/.test(e.keyCode)&&(!0===e.ctrlKey||!0===e.metaKey)||35<=e.keyCode&&40>=e.keyCode||(e.shiftKey||48>e.keyCode||57<e.keyCode)&&(96>e.keyCode||105<e.keyCode)&&e.preventDefault()});
-		})
-	function valid()
-		{
-			if($('#check_id1').val()==1)
-			{
-				alert("Please Enter Available Email Id");
-				$('#email').focus();
-				return false;
-				
-			}	
-			if($('#check_id2').val()==1)
-			{
-				alert("Please Enter Correct Pin No.");
-				$('#mobile').focus();
-				return false;
-				
-			}
-			if($('#school_password').val()!=$('#confirm_password').val())
-			{
-				alert("Please Enter Correct Password.");
-				$('#confirm_password').focus();
-				return false;
-				
-			}
-			return true;
-		}
 </script>
 <script>
 	$(document).ready(function(){
