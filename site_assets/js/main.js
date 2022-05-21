@@ -40,7 +40,17 @@
 
   //Header mega menu
   var $nav = $('li.sbmenu');
+  var $navchild = $('li.sbcdmenu');
   $nav.hover(
+    function () {
+      $(this).addClass('hover');
+    },
+    function () {
+      $(this).removeClass('hover');
+    }
+  );
+
+  $navchild.hover(
     function () {
       $(this).addClass('hover');
     },

@@ -679,7 +679,8 @@ div.custom-nav>ul>li.sbmenu>a:after {
 	box-shadow: 0 10px 15px 0 rgba(56, 0, 189, .2)
 }
 
-.nx-dropdown {
+.nx-dropdown ,
+.Cx-dropdown {
 	position: absolute;
 	z-index: 1;
 	left: 0;
@@ -695,7 +696,8 @@ div.custom-nav>ul>li.sbmenu>a:after {
 	transition: all .5s ease
 }
 
-div.custom-nav>ul>li:hover .nx-dropdown {
+div.custom-nav>ul>li:hover .nx-dropdown ,
+ul li.sbcdmenu:hover .Cx-dropdown {
 	opacity: 1;
 	height: auto;
 	overflow: inherit
@@ -2626,8 +2628,8 @@ footer.ftshap:before {
 .fixedTimer{
 	position: fixed;
 	top: 110px;
-	right: 15px;
-
+    right: 15px;
+    background: #fffc;
 }
 
 .details b{
@@ -2787,6 +2789,25 @@ footer.ftshap:before {
     border-radius: 6px;
     border: 5px dashed #000;
     border-style: dashed;
+    position: relative;
+    margin-top: 150px;
+}
+
+.awndRwds h3 {
+	color: #fff;
+}
+
+.awndRwds::after {
+    position: absolute;
+    content: '';
+    right: 50px;
+    top: -130px;
+    background-image: url("../images/vector/award.svg");
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-25deg);
 }
 
 .awndRwds p::before{
@@ -2810,11 +2831,24 @@ footer.ftshap:before {
 	color: #000;
 }
 
+.knmor {
+    display: block;
+	width: auto;
+    min-width: fit-content;
+    max-width: fit-content;
+    margin: 0;
+}
+
 .Disquali {
     padding: 12px;
     background: #ffdfdf;
     font-style: italic;
     color: #f00;
+}
+
+.Disquali.vbL {
+    background: #e8e8e8;
+    color: #803480;
 }
 
 .inovaivelists li{
@@ -4317,9 +4351,9 @@ footer.ftshap:before {
     border: 10px solid transparent;
   	padding: 15px;
   	border-image-slice: 20%;
-  	border-width: 10px;
-  	border-radius: 12px;
-  	border-image: url("http://hermansvereecken.com/stuff/bingel/square-svg05d.svg")
+  	border-width: 0px;
+  	border-radius: 20px;
+  	border-image: url("../images/vector/.svg")
     38% round;
   	margin: 0 auto;
   	transition: all 0.4s;
@@ -4354,12 +4388,13 @@ footer.ftshap:before {
 }
 
 .service-sec-list h5 {
-	font-size: 17px;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 .service-sec-list p {
-	font-size: 15px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 18px;
 	margin: 14px 0 0
 }
 
@@ -4485,6 +4520,59 @@ footer.ftshap:before {
 .service-sec-list {
 	padding: 25px 25px;
 	position: relative;
+	box-shadow: 0px 8px 8px -4px #00000012;
+	
+}
+
+.service-sec-list::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #673ab769 0, #2196f363 100%);
+    z-index: 0;
+    border-radius: 8px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.Inno-cardbdy .Inno-cardHd{
+    padding: 4px 15px;
+    background: #fafafa;
+}
+.Inno-cardbdy h3{
+    font-size: 16px;
+    padding: 4px 15px;
+    font-weight: 600;
+    background: #dfdfdf;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+.custom-nav .menu-dorpdown.childSubmenu {
+    right: auto;
+    left: 100%;
+    top: -16px;
+}
+.Inno-cardbdy .Inno-cardHd p {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.Inno-cardbdy {
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.service-sec-list:hover::before {
+	transition: all 0.3s ease-in-out;
+	background: linear-gradient(to right, #673ab769 0, #2196f363 100%);
+	clip-path: polygon(0 0, 100% 1%, 100% 100%, 0% 100%);
 }
 
 .service-sec-brp {
@@ -4498,7 +4586,7 @@ footer.ftshap:before {
 	height: 60px;
 	width: 60px;
 	margin-bottom: 10px;
-	filter: hue-rotate(84deg);
+	/*filter: hue-rotate(84deg);*/
 }
 
 .service-sec-list:hover::after {
@@ -4522,9 +4610,11 @@ footer.ftshap:before {
 	opacity: 0;
 }
 
+
+
 .service-sec-list:hover {
 	padding: 25px;
-	background-color: #ccc;
+	/*background-color: #ccc;*/
 }
 
 .service-sec-list:hover img {
@@ -9387,66 +9477,87 @@ a.drop_query_btn_2 .drop_icon_mail {
 .contact-card{
   cursor: url('https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562029/cursor-worm_kij6gi.png'), auto;
 }
+  
 
+/* particle design css */
 @keyframes confetti-slow {
-  0% {
-    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+	0% {
+	  transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+	}
+	100% {
+	  transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+	}
   }
-
-  100% {
-    transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+  @keyframes confetti-medium {
+	0% {
+	  transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+	}
+	100% {
+	  transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+	}
   }
-}
-
-@keyframes confetti-medium {
-  0% {
-    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  @keyframes confetti-fast {
+	0% {
+	  transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+	}
+	100% {
+	  transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
+	}
+  }  
+  .confetti-container {
+	perspective: 700px;
+	overflow: hidden;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	position: fixed;
+	left: 0;
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+	background: transparent;
+	border: 1px solid white;
+	top: 0px;
   }
-
-  100% {
-    transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+  
+  .confetti {
+	position: absolute;
+	z-index: 1;
+	top: -10px;
+	border-radius: 0%;
   }
-}
-
-@keyframes confetti-fast {
-  0% {
-    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
-  }
-
-  100% {
-    transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
-  }
-}
-
-
-.confetti-container {
-  perspective: 700px;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.confetti.animation-slow{
+  .confetti--animation-slow {
 	animation: confetti-slow 2.25s linear 1 forwards;
-}
-
-.confetti.animation-medium{
+  }
+  .confetti--animation-medium {
 	animation: confetti-medium 1.75s linear 1 forwards;
-}
-
-.confetti.animation-fast{
+  }
+  .confetti--animation-fast {
 	animation: confetti-fast 1.25s linear 1 forwards;
-}
+  }
 
-.confetti {
-  position: absolute;
-  z-index: 1;
-  top: -10px;
-  border-radius: 0%;
-}
+  .final_Result img{
+	  width: auto;
+	  max-width: 600px;
+	  object-fit: contain;
+	  object-position: center;
+  }
+
+  .final_Result {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  align-items: center;
+	  justify-content: flex-start;
+	  padding-top: 75px;
+  }
+
+  .final_Result .greeting-mess h3{
+	font-size: 60px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
 
 
 @media only screen and (max-width: 769px) {
@@ -9455,5 +9566,3 @@ a.drop_query_btn_2 .drop_icon_mail {
 		height: 120px;
 	}
 }
-
-https://codepen.io/l2zeo/pen/ZEBLepW
