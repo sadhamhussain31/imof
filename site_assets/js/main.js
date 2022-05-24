@@ -136,19 +136,19 @@
         items: 1
       },
       768: {
-        items: 1
+        items: 2
       },
       991: {
-        items: 1
+        items: 2
       },
       1200: {
-        items: 1
+        items: 2
       },
       1400: {
-        items: 1
+        items: 2
       },
       1600: {
-        items: 1
+        items: 2
       },
     }
   });
