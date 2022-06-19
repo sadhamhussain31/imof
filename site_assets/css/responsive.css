@@ -181,7 +181,15 @@
 }
 
 
+@media only screen and (max-width: 600px) {
+    .newsCrd:nth-child(1),.newsCrd:nth-child(2) {
+        display: none!important;
+    }
+}
+
 @media only screen and (max-width: 420px) {
+
+    
 
     .mobile-btn a.ph-btn {
         font-size: 13px;
