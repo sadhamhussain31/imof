@@ -278,6 +278,12 @@ span.circle2 {
 	color: #0a2233
 }
 
+.homeHdr.nav-bg-b .custom-nav .nav-list li a.menu-links,
+.top-header .navbar .custom-btn:focus,
+.top-header .navbar .custom-btn:hover{
+	color: #fff;
+}
+
 .sticky .custom-nav .nav-list li a.menu-links,
 .sticky .dsk-logo {
 	line-height: 30px
@@ -417,7 +423,7 @@ span.circle2 {
 	background-color: #ffcb4d;
 }
 
-.newsCrd figure img{
+.carosalIndex #carouselExampleFade .carousel-item .newsCrd figure img{
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
@@ -1232,6 +1238,7 @@ a.play-video::after {
     top: 84px;
     left: 37px;
     right: 37px;
+    z-index: 99;
 }
 
 .flashnews .divon p{
@@ -6010,6 +6017,32 @@ h3 a {
 	padding: 30px
 }
 
+.carosalIndex #carouselExampleFade {
+	height: 100vh;
+}
+
+.carosalIndex {
+	position: relative;
+}
+
+.carosalIndex .carousel-inner .carousel-item:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background: #0000007a;
+	height: 100%;
+}
+
+.carosalIndex #carouselExampleFade .carousel-item img{
+	height: 100vh;
+	object-fit: cover;
+	border: none;
+}
+
 @media (min-width:1200px) {
 	.shop-container {
 		max-width: 1110px !important
@@ -9742,6 +9775,15 @@ a.drop_query_btn_2 .drop_icon_mail {
     	padding-left: 35px;
     	margin-top: 20px;
   	}
+
+	  .Stiky_notes .imptNts.nonIm:before {
+		display: none;
+	  }
+
+	.Stiky_notes .imptNts.nonIm{
+	background: #fff;
+	padding: 0px;	  
+	}
 
   .Stiky_notes .mstImpt {
     background: #ffcb4d;
