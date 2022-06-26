@@ -4497,7 +4497,7 @@ footer.ftshap:before {
 }
 
 .service-sec-list p {
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 18px;
 	margin: 14px 0 0
 }
@@ -4519,6 +4519,12 @@ footer.ftshap:before {
 .col-lg-6-cus {
 	width: 33%;
 	margin-bottom: 15px;
+}
+
+.col-lg-3-cuss {
+	width: 31%;
+	margin: 10px;
+	position: relative;
 }
 
 .col-lg-3-cus {
